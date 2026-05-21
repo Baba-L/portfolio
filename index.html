@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baba Lamine — Développeur Full Stack & CEO de Dunuya Mall. Créateur de solutions numériques innovantes pour l'Afrique.">
+    <meta name="keywords" content="développeur, full stack, Dunuya Mall, Mali, Afrique, e-commerce, Mobile Money, applications de gestion">
+    <meta name="author" content="Baba Lamine">
+    <meta property="og:title" content="Baba Lamine — Développeur Full Stack | CEO Dunuya Mall">
+    <meta property="og:description" content="Créateur de solutions numériques innovantes pour l'Afrique.">
+    <meta property="og:type" content="website">
+    <title>Baba Lamine — Développeur Full Stack | CEO Dunuya Mall</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+
+    <!-- ==================== PRELOADER ==================== -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-b">B</span><span class="logo-l">L</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Chargement en cours...</p>
+        </div>
+    </div>
+
+    <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ==================== CURSOR CUSTOM ==================== -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- ==================== PARTICLE CANVAS ==================== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ==================== FLOATING SHAPES ==================== -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-logo">B<span>L</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Avis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#process">Processus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="nav-cta">Me contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Disponible pour de nouveaux projets
+                    </div>
+                    <h1 class="hero-title">
+                        Bonjour, je suis<br>
+                        <span class="gradient-text">Baba Lamine</span>
+                    </h1>
+                    <h2 class="hero-subtitle typing-container">
+                        <span id="typing-text"></span><span class="typing-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Développeur Full Stack & entrepreneur tech basé au Mali. Je conçois des solutions numériques innovantes, des applications de gestion et des plateformes e-commerce propulsées par le Mobile Money pour transformer l'Afrique digitale.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary-custom">
+                            <i class="fas fa-rocket"></i> Voir mes projets
+                        </a>
+                        <a href="#contact" class="btn btn-outline-custom">
+                            <i class="fas fa-paper-plane"></i> Me contacter
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="hero-avatar-wrapper">
+                        <div class="avatar-ring"></div>
+                        <div class="hero-avatar">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Money</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-store"></i>
+                            <span>E-Commerce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Stats -->
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p class="stat-label">Projets réalisés</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="35">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p class="stat-label">Clients satisfaits</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="12">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p class="stat-label">Applications développées</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p class="stat-label">Années d'expérience</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scrollez</span>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">À propos</span>
+                <h2 class="section-title">Qui suis-je <span class="gradient-text">?</span></h2>
+                <p class="section-subtitle">Découvrez mon parcours, ma vision et ma passion pour la technologie</p>
+            </div>
+
+            <div class="row align-items-center about-content">
+                <div class="col-lg-5 about-image-wrapper" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-image-card">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="experience-badge">
+                            <span class="exp-number">5+</span>
+                            <span class="exp-text">Ans d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="about-text">
+                        <h3 class="about-heading">Développeur & Entrepreneur Tech Passionné</h3>
+                        <p class="about-paragraph">
+                            Je suis <strong>Baba Lamine</strong>, développeur Full Stack et fondateur de <strong>Dunuya Mall</strong>, une marketplace e-commerce innovante conçue pour le marché africain. Passionné par la digitalisation du continent, je crée des solutions numériques qui répondent aux besoins réels des entreprises et des communautés.
+                        </p>
+                        <p class="about-paragraph">
+                            Mon expertise couvre le développement d'<strong>applications de gestion</strong>, de <strong>plateformes e-commerce</strong>, de <strong>systèmes de stock</strong>, et d'<strong>intégrations Mobile Money</strong>. Je combine technologie moderne et compréhension profonde du marché africain pour livrer des produits exceptionnels.
+                        </p>
+
+                        <div class="about-grid">
+                            <div class="about-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bamako, Mali</span>
+                            </div>
+                            <div class="about-item">
+                                <i class="fas fa-building"></i>
+                                <span>CEO — Dunuya Mall</span>
+                            </div>
+                            <div class="about-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Full Stack Developer</span>
+                            </div>
+                            <div class="about-item">
+                                <i class="fas fa-globe-africa"></i>
+                                <span>Focus Afrique</span>
+                            </div>
+                        </div>
+
+                        <!-- Vision & Valeurs -->
+                        <div class="vision-values">
+                            <div class="vision-card">
+                                <div class="vision-icon"><i class="fas fa-eye"></i></div>
+                                <h4>Ma Vision</h4>
+                                <p>Accélérer la digitalisation africaine en créant des solutions technologiques accessibles, performantes et adaptées aux réalités locales.</p>
+                            </div>
+                            <div class="vision-card">
+                                <div class="vision-icon"><i class="fas fa-heart"></i></div>
+                                <h4>Mes Valeurs</h4>
+                                <p>Innovation, excellence, impact social, collaboration et engagement envers la transformation numérique du continent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="about-timeline" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="timeline-title">Mon <span class="gradient-text">Parcours</span></h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2020</span>
+                            <h4>Débuts en développement</h4>
+                            <p>Apprentissage intensif du HTML, CSS, JavaScript et PHP. Premiers projets web et applications locales.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2021</span>
+                            <h4>Premiers clients & projets</h4>
+                            <p>Développement d'applications de gestion pour des entreprises maliennes. Mise en place de systèmes de stock et de facturation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2023</span>
+                            <h4>Création de Dunuya Mall</h4>
+                            <p>Lancement de la marketplace e-commerce avec intégration Mobile Money. Première plateforme de vente en ligne moderne au Mali.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2025</span>
+                            <h4>Expansion & Innovation</h4>
+                            <p>Diversification des services : applications municipales, solutions scolaires, APIs avancées et déploiement cloud.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot active"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2026</span>
+                            <h4>Objectif continental</h4>
+                            <p>Expansion des solutions numériques à l'échelle de l'Afrique de l'Ouest. Partenariats stratégiques et innovations Mobile Money.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Compétences</span>
+                <h2 class="section-title">Mon <span class="gradient-text">expertise</span> technique</h2>
+                <p class="section-subtitle">Technologies et outils que je maîtrise pour créer des solutions performantes</p>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="category-title"><i class="fas fa-palette"></i> Frontend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <h4>Bootstrap</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                        <h4>Tailwind CSS</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                        <h4>Angular</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h4>React</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <h4>PHP</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>MySQL</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                        <h4>API REST</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+                        <span class="skill-percent">87%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                        <h4>Architecture MVC</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Sécurité Web</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile & Other -->
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="category-title"><i class="fas fa-mobile-alt"></i> Mobile & Autres</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-mobile"></i></div>
+                        <h4>React Native</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+                        <span class="skill-percent">78%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h4>UI/UX Design</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+                        <span class="skill-percent">82%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h4>Hébergement</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-search"></i></div>
+                        <h4>SEO</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <h4>Mobile Money</h4>
+                        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">Ce que je <span class="gradient-text">propose</span></h2>
+                <p class="section-subtitle">Des solutions numériques complètes et sur mesure pour votre entreprise</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Sites vitrines, applications web et plateformes sur mesure avec les technologies les plus récentes.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-badge">Populaire</div>
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Applications de Gestion</h3>
+                    <p>Systèmes de gestion personnalisés : RH, comptabilité, planning, reporting et tableaux de bord.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Marketplace</h3>
+                    <p>Plateformes de vente en ligne complètes avec paiement Mobile Money, gestion des commandes et livraison.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Gestion de Stock</h3>
+                    <p>Solutions de suivi et gestion des stocks en temps réel avec alertes automatiques et rapports détaillés.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>Systèmes Scolaires</h3>
+                    <p>Plateformes de gestion scolaire : inscriptions, notes, emplois du temps, bulletins et portails parents.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Solutions Mobile Money</h3>
+                    <p>Intégration de paiements Orange Money, Moov Money, Wave et autres solutions de paiement mobile.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Applications Municipales</h3>
+                    <p>Logiciels de gestion communale : état civil, fiscalité locale, urbanisme et services aux citoyens.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>APIs & Intégrations</h3>
+                    <p>Conception et intégration d'APIs REST, interconnexion de systèmes et automatisation des processus.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Maintenance préventive et corrective, mises à jour de sécurité, support technique 24/7.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="service-icon-wrapper">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Hébergement & Déploiement</h3>
+                    <p>Configuration serveur, déploiement cloud, optimisation des performances et monitoring continu.</p>
+                    <a href="#contact" class="service-link">Demander un devis <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Mes <span class="gradient-text">réalisations</span></h2>
+                <p class="section-subtitle">Découvrez les projets qui illustrent mon expertise et ma passion</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="gestion">Gestion</button>
+                <button class="filter-btn" data-filter="municipal">Municipal</button>
+                <button class="filter-btn" data-filter="scolaire">Scolaire</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Dunuya Mall -->
+                <div class="project-card" data-category="ecommerce" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">E-Commerce</span>
+                        <h3>Dunuya Mall</h3>
+                        <p>Marketplace e-commerce africaine avec paiement Mobile Money, gestion des vendeurs et système de livraison intégré.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>API REST</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-sm"><i class="fas fa-play"></i> Démo</a>
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AZ-MANAGEMENT -->
+                <div class="project-card" data-category="gestion" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Gestion</span>
+                        <h3>AZ-MANAGEMENT</h3>
+                        <p>Application complète de gestion d'entreprise : comptabilité, RH, facturation et tableaux de bord analytiques.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>MVC</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-sm"><i class="fas fa-play"></i> Démo</a>
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 360 Management -->
+                <div class="project-card" data-category="gestion" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Gestion</span>
+                        <h3>360 Management</h3>
+                        <p>Système de gestion à 360° avec modules intégrés : ventes, achats, inventaire, CRM et reporting avancé.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Tailwind</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-sm"><i class="fas fa-play"></i> Démo</a>
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestion Municipale -->
+                <div class="project-card" data-category="municipal" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Municipal</span>
+                        <h3>Gestion Municipale</h3>
+                        <p>Plateforme de gestion communale : état civil, fiscalité, urbanisme et services numériques aux citoyens.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-sm"><i class="fas fa-play"></i> Démo</a>
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestion Scolaire -->
+                <div class="project-card" data-category="scolaire" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Scolaire</span>
+                        <h3>Gestion Scolaire</h3>
+                        <p>ERP scolaire complet : inscriptions, notes, bulletins, emplois du temps et portail parents-enseignants.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-sm"><i class="fas fa-play"></i> Démo</a>
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestion de Stock -->
+                <div class="project-card" data-category="gestion" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Gestion</span>
+                        <h3>Gestion de Stock</h3>
+                        <p>Système de gestion des stocks en temps réel avec code-barres, alertes de seuil et rapports d'inventaire.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>AJAX</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-sm"><i class="fas fa-play"></i> Démo</a>
+                            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS SECTION ==================== -->
+    <section id="stats" class="stats-section">
+        <div class="stats-bg-gradient"></div>
+        <div class="container">
+            <div class="row stats-grid">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3 class="counter" data-target="50">0</h3>
+                        <p>Projets réalisés</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3 class="counter" data-target="250">0</h3>
+                        <p>K+ Lignes de code</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3 class="counter" data-target="35">0</h3>
+                        <p>Clients satisfaits</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3 class="counter" data-target="5">0</h3>
+                        <p>Années d'expérience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Témoignages</span>
+                <h2 class="section-title">Ce que disent <span class="gradient-text">mes clients</span></h2>
+                <p class="section-subtitle">La satisfaction de mes clients est ma plus grande récompense</p>
+            </div>
+
+            <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>Amadou Diallo</h4>
+                                    <span>CEO — Entreprise Commerciale</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Baba Lamine a transformé notre gestion avec son application. Le système est intuitif, rapide et parfaitement adapté à nos besoins. Le service après-vente est exceptionnel."</p>
+                            <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>Fatoumata Koné</h4>
+                                    <span>Directrice — École Privée</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"La plateforme de gestion scolaire développée par Baba a révolutionné notre administration. Les parents adorent le portail et les enseignants l'utilisent facilement."</p>
+                            <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>Ibrahim Traoré</h4>
+                                    <span>Maire — Commune du Mali</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"L'application municipale nous a permis de moderniser nos services. Les citoyens sont satisfaits et la gestion est devenue transparente et efficace."</p>
+                            <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>Moussa Coulibaly</h4>
+                                    <span>Fondateur — Startup Tech</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Un développeur exceptionnel qui comprend les besoins du marché africain. Dunuya Mall est une preuve de son talent et de sa vision innovante."</p>
+                            <div class="testimonial-quote"><i class="fas fa-quote-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS SECTION ==================== -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Processus</span>
+                <h2 class="section-title">Comment je <span class="gradient-text">travaille</span></h2>
+                <p class="section-subtitle">Une méthodologie éprouvée pour garantir des résultats exceptionnels</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-line"></div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-search"></i></div>
+                        <h3>Analyse</h3>
+                        <p>Étude approfondie de vos besoins, analyse du marché et définition des objectifs du projet.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h3>Conception</h3>
+                        <p>Création des maquettes UI/UX, architecture technique et planification détaillée du développement.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-code"></i></div>
+                        <h3>Développement</h3>
+                        <p>Programmation avec les meilleures pratiques, code propre et documenté, sprints réguliers.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-vial"></i></div>
+                        <h3>Tests</h3>
+                        <p>Tests rigoureux : fonctionnels, performance, sécurité et compatibilité multi-navigateurs.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Déploiement</h3>
+                        <p>Mise en production, configuration serveur, optimisation des performances et lancement officiel.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-headset"></i></div>
+                        <h3>Maintenance</h3>
+                        <p>Support continu, mises à jour de sécurité, évolutions fonctionnelles et monitoring 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Travaillons <span class="gradient-text">ensemble</span></h2>
+                <p class="section-subtitle">Vous avez un projet ? Contactez-moi et donnons vie à vos idées</p>
+            </div>
+
+            <div class="row contact-content">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Bamako, Mali 🇲🇱</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@babalamine.dev</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+223 XX XX XX XX</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Disponibilité</h4>
+                                <p>Lun - Ven : 8h - 18h (GMT)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="#" class="social-card"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-card"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-card"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-card"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Nom complet</label>
+                                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                                        <span class="form-error"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                                        <span class="form-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service souhaité</label>
+                                <select id="service" name="service">
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="web">Développement Web</option>
+                                    <option value="gestion">Application de Gestion</option>
+                                    <option value="ecommerce">E-Commerce</option>
+                                    <option value="mobile">Application Mobile</option>
+                                    <option value="api">API & Intégration</option>
+                                    <option value="maintenance">Maintenance</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+                                <span class="form-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-submit">
+                                <span class="btn-text">Envoyer le message</span>
+                                <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Envoi en cours...</span>
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="form-success" style="display:none;">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Message envoyé avec succès !</h4>
+                            <p>Je vous répondrai dans les plus brefs délais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4 footer-brand">
+                        <div class="footer-logo">
+                            <span class="brand-logo">B<span>L</span></span>
+                        </div>
+                        <p class="footer-desc">Développeur Full Stack & entrepreneur tech passionné par la digitalisation africaine. Créateur de Dunuya Mall.</p>
+                        <div class="footer-socials">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 footer-links">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#skills">Compétences</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 footer-links">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web</a></li>
+                            <li><a href="#services">E-Commerce</a></li>
+                            <li><a href="#services">Gestion</a></li>
+                            <li><a href="#services">Mobile</a></li>
+                            <li><a href="#services">APIs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-4 footer-newsletter">
+                        <h4>Restons connectés</h4>
+                        <p>Recevez mes dernières actualités et projets.</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Votre email">
+                            <button type="button"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Baba Lamine. Tous droits réservés. | Conçu avec <i class="fas fa-heart"></i> au Mali 🇲🇱</p>
+                <p class="footer-slogan">"Construisons l'Afrique numérique, une ligne de code à la fois."</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
