@@ -139,10 +139,8 @@
                     <div class="hero-avatar-wrapper">
                         <div class="avatar-ring"></div>
                         <div class="hero-avatar">
-                            <div class="avatar-placeholder">
-                                <i class="fas fa-user-astronaut"></i>
-                            </div>
-                        </div>
+                            <img src="assets/images/avatar.png" alt="Baba Lamine, développeur Full Stack" class="hero-avatar-img">
+                        </div>      
                         <div class="floating-card card-1">
                             <i class="fas fa-code"></i>
                             <span>Full Stack</span>
@@ -207,9 +205,7 @@
             <div class="row align-items-center about-content">
                 <div class="col-lg-5 about-image-wrapper" data-aos="fade-right" data-aos-duration="800">
                     <div class="about-image-card">
-                        <div class="about-image-placeholder">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
+                        <img src="assets/images/avatar.png" alt="Baba Lamine à son bureau de développement" class="about-photo">
                         <div class="experience-badge">
                             <span class="exp-number">5+</span>
                             <span class="exp-text">Ans d'expérience</span>
@@ -924,115 +920,6 @@
         </div>
     </section>
 
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Contact</span>
-                <h2 class="section-title">Travaillons <span class="gradient-text">ensemble</span></h2>
-                <p class="section-subtitle">Vous avez un projet ? Contactez-moi et donnons vie à vos idées</p>
-            </div>
-
-            <div class="row contact-content">
-                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <h4>Localisation</h4>
-                                <p>Bamako, Mali 🇲🇱</p>
-                            </div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>babalaminewattara123@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                            <div>
-                                <h4>WhatsApp</h4>
-                                <p>+223 71 46 86 67</p>
-                            </div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                            <div>
-                                <h4>Disponibilité</h4>
-                                <p>Lun - Ven : 8h - 22h (GMT)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-socials">
-                        <a href="https://github.com/Baba-L/" class="social-card"><i class="fab fa-github"></i></a>
-                        <!--a href="#" class="social-card"><i class="fab fa-linkedin-in"></i></a-->
-                        <a href="https://wa.me/22371468667" class="social-card"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://facebook.com/baba.lamine.377550" class="social-card"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-                    <div class="contact-form-wrapper">
-                        <form id="contactForm" class="contact-form">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">Nom complet</label>
-                                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                                        <span class="form-error"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
-                                        <span class="form-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Sujet</label>
-                                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
-                                <span class="form-error"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="service">Service souhaité</label>
-                                <select id="service" name="service">
-                                    <option value="">Sélectionnez un service</option>
-                                    <option value="web">Développement Web</option>
-                                    <option value="gestion">Application de Gestion</option>
-                                    <option value="ecommerce">E-Commerce</option>
-                                    <option value="mobile">Application Mobile</option>
-                                    <option value="api">API & Intégration</option>
-                                    <option value="maintenance">Maintenance</option>
-                                    <option value="autre">Autre</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
-                                <span class="form-error"></span>
-                            </div>
-                            <button type="submit" class="btn btn-submit">
-                                <span class="btn-text">Envoyer le message</span>
-                                <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Envoi en cours...</span>
-                                <i class="fas fa-paper-plane btn-icon"></i>
-                            </button>
-                        </form>
-                        <div id="formSuccess" class="form-success" style="display:none;">
-                            <i class="fas fa-check-circle"></i>
-                            <h4>Message envoyé avec succès !</h4>
-                            <p>Je vous répondrai dans les plus brefs délais.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ==================== FOOTER ==================== -->
     <footer id="footer">
         <div class="container">
@@ -1048,7 +935,7 @@
                         </p>
                         <div class="footer-socials">
                             <a href="https://github.com/Baba-L/"><i class="fab fa-github text-dark fs-5"></i></a>
-                            <!--a href="#"><i class="fab fa-linkedin-in"></i></a-->
+                            <a href="https://www.linkedin.com/in/baba-lamine-a51678229/"><i class="fab fa-linkedin-in"></i></a>
                             <a href="mailto:babalaminewattara123@gmail.com"><i class="fab fa-at"></i></a>
                             <a href="https://facebook.com/baba.lamine.377550"><i class="fab fa-facebook text-primary fs-5"></i></a>
                             <a href="https://wa.me/22371468667"><i class="fab fa-whatsapp text-success fs-5"></i></a>
@@ -1075,11 +962,35 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 footer-newsletter">
-                        <h4>Restons connectés</h4>
-                        <p>Recevez mes dernières actualités et projets.</p>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Votre email">
-                            <button type="button"><i class="fas fa-arrow-right"></i></button>
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Localisation</h4>
+                                    <p>Bamako, Mali 🇲🇱</p>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>babalaminewattara123@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                                <div>
+                                    <h4>WhatsApp</h4>
+                                    <p>+223 71 46 86 67</p>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h4>Disponibilité</h4>
+                                    <p>Lun - Ven : 8h - 22h (GMT)</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
